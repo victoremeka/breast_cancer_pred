@@ -2,8 +2,8 @@ Name: Victor Emeka
 Matric Number: 23cg034065
 Machine Learning Algorithm Used: Logistic Regression
 Model Persistence Method: Joblib
-Live Application URL: [To be updated after deployment]
-GitHub Repository: [To be updated after pushing to GitHub]
+Live Application URL: https://breastcancerpred-5pbwhn3zfxxp4jk99z2sxt.streamlit.app/
+GitHub Repository: https://github.com:victoremeka/breast_cancer_pred/
 Features Selected: 
   1. mean radius - Mean of distances from center to points on perimeter
   2. mean texture - Standard deviation of gray-scale values
