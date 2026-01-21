@@ -1,0 +1,135 @@
+# 🚀 Breast Cancer Prediction System - Quick Start Guide
+
+## Prerequisites
+- Python 3.8 or higher
+- pip (Python package manager)
+
+## Installation & Setup
+
+### Option 1: Using setup.sh (Linux/Mac)
+```bash
+chmod +x setup.sh
+./setup.sh
+```
+
+### Option 2: Manual Setup
+```bash
+# Create virtual environment
+python3 -m venv venv
+
+# Activate virtual environment
+# On Linux/Mac:
+source venv/bin/activate
+# On Windows:
+venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+## Training the Model
+
+Before running the application, train the model first:
+
+1. Open the Jupyter notebook:
+```bash
+jupyter notebook model/model_building.ipynb
+```
+
+2. Run all cells in the notebook (Kernel → Restart & Run All)
+
+3. Verify that the following files are created in the `model/` directory:
+   - `breast_cancer_model.pkl`
+   - `scaler.pkl`
+   - `feature_names.pkl`
+
+## Running the Application
+
+```bash
+streamlit run app.py
+```
+
+The application will open in your default web browser at `http://localhost:8501`
+
+## Using the Application
+
+1. Enter the 5 tumor feature values:
+   - Mean Radius
+   - Mean Texture
+   - Mean Perimeter
+   - Mean Area
+   - Mean Smoothness
+
+2. Click "🔍 Predict Diagnosis"
+
+3. View the prediction result (Benign or Malignant) with confidence scores
+
+## Project Structure
+
+```
+breast_cancer_pred/
+├── app.py                          # Streamlit web application
+├── requirements.txt                # Python dependencies
+├── setup.sh                        # Setup script
+├── README.md                       # Project documentation
+├── QUICKSTART.txt                  # This file
+├── BreastCancer_hosted_webGUI_link.txt  # Deployment info
+└── model/
+    ├── model_building.ipynb        # Model training notebook
+    ├── breast_cancer_model.pkl     # Trained model
+    ├── scaler.pkl                  # Feature scaler
+    └── feature_names.pkl           # Feature names
+```
+
+## Deployment
+
+### Deploy to Streamlit Cloud
+
+1. Push your code to GitHub:
+```bash
+git init
+git add .
+git commit -m "Initial commit: Breast Cancer Prediction System"
+git branch -M main
+git remote add origin <your-repo-url>
+git push -u origin main
+```
+
+2. Go to https://streamlit.io/cloud
+
+3. Sign in with GitHub
+
+4. Click "New app"
+
+5. Select your repository, branch (main), and main file (app.py)
+
+6. Click "Deploy"
+
+7. Update the `BreastCancer_hosted_webGUI_link.txt` with your live URL
+
+## Troubleshooting
+
+### Model files not found
+- Make sure you've run the Jupyter notebook and generated the .pkl files
+- Check that files are in the `model/` directory
+
+### Import errors
+- Verify all dependencies are installed: `pip list`
+- Reinstall requirements: `pip install -r requirements.txt`
+
+### Streamlit won't start
+- Check if port 8501 is available
+- Try: `streamlit run app.py --server.port 8502`
+
+## Support
+
+For issues or questions:
+- Check the PROJECT_REQUIREMENTS.md file
+- Review the model_building.ipynb notebook
+- Contact your instructor or TA
+
+---
+
+⚠️ **DISCLAIMER**: This system is for educational purposes only and should NOT be used for medical diagnosis.
+
+**Last Updated**: January 21, 2026

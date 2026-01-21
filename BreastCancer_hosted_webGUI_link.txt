@@ -1,0 +1,19 @@
+Name: Victor Emeka
+Matric Number: 23cg034065
+Machine Learning Algorithm Used: Logistic Regression
+Model Persistence Method: Joblib
+Live Application URL: [To be updated after deployment]
+GitHub Repository: [To be updated after pushing to GitHub]
+Features Selected: 
+  1. mean radius - Mean of distances from center to points on perimeter
+  2. mean texture - Standard deviation of gray-scale values
+  3. mean perimeter - Mean size of the core tumor
+  4. mean area - Mean area of the tumor
+  5. mean smoothness - Mean of local variation in radius lengths
+
+Additional Notes:
+- Model trained using StandardScaler for feature normalization
+- Achieved high accuracy and performance metrics
+- Web application built with Streamlit for easy deployment
+- All model artifacts (model, scaler, feature_names) saved in model/ directory
+- Educational project - not for medical diagnosis
